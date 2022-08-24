@@ -9,6 +9,5 @@ WORKDIR /app
 COPY --from=build-env /app/out .
 
 ENV ASPNETCORE_ENVIRONMENT Production
-ENV GOOGLE_APPLICATION_CREDENTIALS "ivets-530b2-338621fc1f7e.json"
 
-ENTRYPOINT ["dotnet", "iVets.Ui.Api.dll"]
+ENTRYPOINT ["dotnet", "webapi.dll"]

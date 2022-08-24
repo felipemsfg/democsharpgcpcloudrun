@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+    api:        
+        image: felipemsfg-api
+        container_name: fm-felore-aspnetcore-webapi                
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Development
+        ports:
+            - "8080:80"
